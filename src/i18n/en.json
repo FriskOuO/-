@@ -1,0 +1,42 @@
+{
+  "app": {
+    "title": "Mystic Tarot",
+    "start": "Start Reading",
+    "allCards": "All Cards"
+  },
+  "theme": {
+    "title": "Choose a Theme",
+    "love": "Love",
+    "career": "Career",
+    "health": "Health",
+    "other": "Other"
+  },
+  "count": {
+    "title": "Select Card Count",
+    "oneCard": "One Card",
+    "threeCards": "Three Cards",
+    "sixCards": "Six Cards"
+  },
+  "draw": {
+    "title": "Draw Tarot Cards",
+    "instruction": "Please select cards from the shuffled deck",
+    "complete": "Complete"
+  },
+  "result": {
+    "title": "Your Tarot Reading",
+    "theme": "Reading Theme",
+    "interpretation": "Interpretation",
+    "upright": "Upright",
+    "reversed": "Reversed",
+    "backToHome": "Back to Home"
+  },
+  "cardInfo": {
+    "title": "Tarot Card Guide",
+    "upright": "Upright Keywords",
+    "reversed": "Reversed Keywords"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "app": {
+    "title": "神秘塔羅",
+    "start": "開始占卜",
+    "allCards": "所有牌義"
+  },
+  "theme": {
+    "title": "選擇占卜主題",
+    "love": "愛情",
+    "career": "事業",
+    "health": "健康",
+    "other": "其他"
+  },
+  "count": {
+    "title": "選擇牌數",
+    "oneCard": "單張牌陣",
+    "threeCards": "三張牌陣",
+    "sixCards": "六張牌陣"
+  },
+  "draw": {
+    "title": "抽取塔羅牌",
+    "instruction": "請從洗好的牌堆中選擇卡片",
+    "complete": "完成抽牌"
+  },
+  "result": {
+    "title": "塔羅占卜結果",
+    "theme": "占卜主題",
+    "interpretation": "解讀",
+    "upright": "正位",
+    "reversed": "逆位",
+    "backToHome": "返回首頁"
+  },
+  "cardInfo": {
+    "title": "塔羅牌牌義總覽",
+    "upright": "正位關鍵詞",
+    "reversed": "逆位關鍵詞"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

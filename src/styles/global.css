@@ -1,0 +1,12 @@
+/* global.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  /* 正確的檔名和路徑 */
+  background-image: url('../assets/images/bg_starry_wood.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff;
+}
