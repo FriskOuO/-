@@ -1,0 +1,376 @@
+[
+  {
+    "id": 0,
+    "name": "The Fool",
+    "image": "/assets/cards/the_fool.png",
+    "meanings": {
+      "upright": {
+        "love": "新的開始與可能性，冒險精神，跟隨直覺的浪漫",
+        "career": "新的職涯機會，冒險精神，不被常規所限制",
+        "health": "精力充沛，精神愉快，活在當下"
+      },
+      "reversed": {
+        "love": "魯莽的決定，忽視關係中的危險信號",
+        "career": "職業上的魯莽，決策不當，機會錯失",
+        "health": "魯莽冒險導致的健康風險，忽視自我保健"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "name": "The Magician",
+    "image": "/assets/cards/the_magician.png",
+    "meanings": {
+      "upright": {
+        "love": "創造浪漫機會，魅力四射，積極追求愛情",
+        "career": "有能力實現目標，善用才能與資源",
+        "health": "積極調整生活方式，尋找有效的健康方案"
+      },
+      "reversed": {
+        "love": "操縱行為，不誠實，或缺乏自信",
+        "career": "才能未充分發揮，或是欺騙與操控",
+        "health": "逃避健康問題，或尋求不切實際的解決方案"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "The High Priestess",
+    "image": "/assets/cards/the_high_priestess.png",
+    "meanings": {
+      "upright": {
+        "love": "直覺與神秘感，深層情感連結，耐心等待",
+        "career": "信任直覺，隱藏的知識與機會，靜觀其變",
+        "health": "傾聽身體的聲音，潛意識健康信號，平靜與冥想"
+      },
+      "reversed": {
+        "love": "忽視直覺，表面關係，隱藏的真相",
+        "career": "不願接受建議，資訊不完整，錯失機會",
+        "health": "忽略症狀，壓抑情緒，缺乏平衡"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "The Empress",
+    "image": "/assets/cards/the_empress.png",
+    "meanings": {
+      "upright": {
+        "love": "豐富的愛，滋養關係，可能懷孕或家庭擴展",
+        "career": "創造力豐富，項目成長，滋養的工作環境",
+        "health": "整體健康良好，創造力旺盛，女性健康"
+      },
+      "reversed": {
+        "love": "過度依賴，窒息的照顧，或缺乏滋養",
+        "career": "創造力受阻，過度擴張，或缺乏成長",
+        "health": "忽視自我照顧，生育問題，或營養失衡"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Emperor",
+    "image": "/assets/cards/the_emperor.png",
+    "meanings": {
+      "upright": {
+        "love": "穩定、可靠的關係，安全感，明確的期望",
+        "career": "領導力，組織有序，紀律與架構",
+        "health": "紀律良好的健康習慣，系統性處理健康問題"
+      },
+      "reversed": {
+        "love": "控制慾過強，僵化思維，缺乏彈性",
+        "career": "專制管理，過度控制，權力濫用",
+        "health": "過度嚴格的健康方案，或忽視控制重要性"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "The Hierophant",
+    "image": "/assets/cards/the_hierophant.png",
+    "meanings": {
+      "upright": {
+        "love": "傳統關係，精神連結，遵循社會規範",
+        "career": "遵循既定路徑，尊師重道，專業倫理",
+        "health": "傳統或常規療法，尋求專家建議"
+      },
+      "reversed": {
+        "love": "打破傳統，非傳統關係，挑戰社會期待",
+        "career": "挑戰權威，創新思維，改變現有系統",
+        "health": "尋求替代療法，質疑傳統醫療建議"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "The Lovers",
+    "image": "/assets/cards/the_lovers.png",
+    "meanings": {
+      "upright": {
+        "love": "和諧的結合，深厚的感情，重要的感情選擇",
+        "career": "良好的合作關係，價值觀一致的工作環境",
+        "health": "身心平衡，做出有益健康的選擇"
+      },
+      "reversed": {
+        "love": "不和諧，價值觀衝突，愛的迷惑",
+        "career": "合作不順，價值觀不一致，決策困難",
+        "health": "不平衡的生活方式，內在衝突導致的健康問題"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "The Chariot",
+    "image": "/assets/cards/the_chariot.png",
+    "meanings": {
+      "upright": {
+        "love": "堅定前進的關係，克服挑戰，勇往直前",
+        "career": "決心與毅力，取得成就，突破障礙",
+        "health": "戰勝健康挑戰，強大意志力，積極進展"
+      },
+      "reversed": {
+        "love": "關係中失去方向，無法克服障礙，衝動",
+        "career": "缺乏方向感，自我懷疑，停滯不前",
+        "health": "健康恢復遇阻，缺乏毅力，挫折感"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "Strength",
+    "image": "/assets/cards/strength.png",
+    "meanings": {
+      "upright": {
+        "love": "情感上的力量，耐心與理解，溫和但堅定",
+        "career": "內在力量，耐心處理挑戰，溫和領導",
+        "health": "精神力量，有意識地控制生活習慣"
+      },
+      "reversed": {
+        "love": "缺乏自信，情感脆弱，無力感",
+        "career": "自我懷疑，缺乏耐心，無法控制情況",
+        "health": "缺乏堅持的動力，面對健康問題感到無力"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "The Hermit",
+    "image": "/assets/cards/the_hermit.png",
+    "meanings": {
+      "upright": {
+        "love": "自我反思期，尋找內在真相，獨處中成長",
+        "career": "獨立工作，專業指導，深入研究",
+        "health": "內在健康探索，獨自療癒，尋求內心平靜"
+      },
+      "reversed": {
+        "love": "過度孤立，拒絕開放心扉，過度分析",
+        "career": "過度孤立，拒絕協助，缺乏方向",
+        "health": "社交隔離導致的健康問題，不願尋求幫助"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Wheel of Fortune",
+    "image": "/assets/cards/wheel_of_fortune.png",
+    "meanings": {
+      "upright": {
+        "love": "命運的轉變，幸運的遇見，周期性變化",
+        "career": "轉機與機會，新的發展階段，好運",
+        "health": "健康狀況的轉變，運氣好轉，周期性改善"
+      },
+      "reversed": {
+        "love": "不幸運的愛情發展，衰退期，困難週期",
+        "career": "壞運氣，阻礙，失去控制感",
+        "health": "健康挫折，循環性的健康問題復發"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "Justice",
+    "image": "/assets/cards/justice.png",
+    "meanings": {
+      "upright": {
+        "love": "公平的關係，平等互惠，負責任的決定",
+        "career": "公平結果，合理決定，法律或合約問題",
+        "health": "平衡生活方式，為過去行為承擔健康結果"
+      },
+      "reversed": {
+        "love": "不公平對待，不平等關係，偏見",
+        "career": "不公正待遇，缺乏責任感，對錯誤的辯解",
+        "health": "不平衡，忽視健康問題的後果"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "The Hanged Man",
+    "image": "/assets/cards/the_hanged_man.png",
+    "meanings": {
+      "upright": {
+        "love": "暫停思考，換個視角看問題，等待時機",
+        "career": "職業暫停期，新視角，自我犧牲",
+        "health": "休息與恢復，改變看待健康的角度"
+      },
+      "reversed": {
+        "love": "猶豫不決，無效的犧牲，執著於過去",
+        "career": "職業停滯，抵抗必要的改變，徒勞",
+        "health": "延遲必要的治療，抗拒改變不健康習慣"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "Death",
+    "image": "/assets/cards/death.png",
+    "meanings": {
+      "upright": {
+        "love": "關係的重大轉變，結束舊模式，新的開始",
+        "career": "職業生涯重大轉變，結束一個階段",
+        "health": "生活方式的徹底改變，舊習慣的終結"
+      },
+      "reversed": {
+        "love": "抗拒必要的改變，依戀過去，恐懼結束",
+        "career": "停滯不前，抗拒轉變，無法放手",
+        "health": "抗拒必要的健康改變，不願放棄有害習慣"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "Temperance",
+    "image": "/assets/cards/temperance.png",
+    "meanings": {
+      "upright": {
+        "love": "平衡的關係，相互調和，耐心培養",
+        "career": "和諧的工作環境，平衡的方法，中庸之道",
+        "health": "平衡的生活方式，溫和療法，漸進改善"
+      },
+      "reversed": {
+        "love": "關係失衡，極端或衝突，缺乏耐心",
+        "career": "工作與生活失衡，過度或不足，沉迷",
+        "health": "生活失衡，極端行為，缺乏節制"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "The Devil",
+    "image": "/assets/cards/the_devil.png",
+    "meanings": {
+      "upright": {
+        "love": "強烈吸引與慾望，依戀或共依存，物質化",
+        "career": "物質主義，過度追求成功，自我限制",
+        "health": "不健康的習慣，成癮行為，自我局限"
+      },
+      "reversed": {
+        "love": "擺脫不健康的關係，打破依戀，覺醒",
+        "career": "擺脫限制性工作，重獲自由，克服困難",
+        "health": "開始戒除不良習慣，擺脫成癮，自我釋放"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "The Tower",
+    "image": "/assets/cards/the_tower.png",
+    "meanings": {
+      "upright": {
+        "love": "突然的變動或分離，信念崩塌，意外事件",
+        "career": "突然的改變，失業，戲劇性轉變",
+        "health": "突發健康問題，重大診斷，緊急情況"
+      },
+      "reversed": {
+        "love": "避免必要的變化，恐懼衝突，壓抑問題",
+        "career": "抗拒必要的破壞，逃避改變，小規模擾亂",
+        "health": "忽視警示信號，避免處理健康問題"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "The Star",
+    "image": "/assets/cards/the_star.png",
+    "meanings": {
+      "upright": {
+        "love": "希望與信心，療癒舊傷，靈性連結",
+        "career": "靈感與創新，信心滿滿，長期願景",
+        "health": "康復期，身心更新，正面健康展望"
+      },
+      "reversed": {
+        "love": "失去希望，幻滅，缺乏信任",
+        "career": "失去信心，懷疑自我，錯失機會",
+        "health": "失去康復希望，情緒低落，負面思想"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "The Moon",
+    "image": "/assets/cards/the_moon.png",
+    "meanings": {
+      "upright": {
+        "love": "迷惑與不確定性，直覺，隱藏的感受",
+        "career": "不確定性，誤解，隱藏的問題",
+        "health": "隱藏的健康問題，心理困擾，直覺健康預警"
+      },
+      "reversed": {
+        "love": "走出混亂，真相顯露，減少恐懼",
+        "career": "澄清誤解，不確定性減少，真相浮現",
+        "health": "接受治療後的清晰，解決隱藏的健康問題"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "The Sun",
+    "image": "/assets/cards/the_sun.png",
+    "meanings": {
+      "upright": {
+        "love": "快樂的關係，活力與熱情，無憂無慮",
+        "career": "成功與認可，能量充沛，樂觀前景",
+        "health": "活力充沛，健康改善，正面能量"
+      },
+      "reversed": {
+        "love": "暫時的陰影，過度樂觀，或熱情衰退",
+        "career": "輕微的挫折，暫時性困難，過度自信",
+        "health": "輕微健康下降，能量不足，需要休息"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Judgement",
+    "image": "/assets/cards/judgement.png",
+    "meanings": {
+      "upright": {
+        "love": "重新評估關係，寬恕與重生，最終決定",
+        "career": "職業上的覺醒，呼召，人生目的",
+        "health": "重大健康突破，重生，接受過去"
+      },
+      "reversed": {
+        "love": "拒絕自我反思，拒絕寬恕，逃避重要對話",
+        "career": "拒絕職業呼召，拒絕改變，自我懷疑",
+        "health": "拒絕健康警訊，延遲治療，自責"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "The World",
+    "image": "/assets/cards/the_world.png",
+    "meanings": {
+      "upright": {
+        "love": "完成與圓滿，理想結合，全面和諧",
+        "career": "成就與完成，目標達成，整合所學",
+        "health": "完整健康，整體平衡，完成康復"
+      },
+      "reversed": {
+        "love": "未實現的結合，缺乏圓滿，拖延結束",
+        "career": "未完成的成就，拖延，缺少關鍵要素",
+        "health": "健康不完全，未解決的問題，拖延治療"
+      }
+    }
+  }
+]

@@ -1,33 +1,39 @@
 import React from 'react';
+import { Button, Dropdown, Space } from 'antd';
+import { GlobalOutlined, DownOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-import { Button, Space } from 'antd';
-import { GlobalOutlined } from '@ant-design/icons';
+import './LanguageSwitcher.css';
 
 export default function LanguageSwitcher() {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang); // 儲存語言設定
+    localStorage.setItem('language', lang);
   };
 
+  const items = [
+    {
+      key: 'en',
+      label: 'English',
+      onClick: () => changeLanguage('en'),
+    },
+    {
+      key: 'zh',
+      label: '中文',
+      onClick: () => changeLanguage('zh'),
+    }
+  ];
+
   return (
-    <Space>
-      <GlobalOutlined />
-      <Button 
-        type={i18n.language === 'en' ? 'primary' : 'default'} 
-        size="small" 
-        onClick={() => changeLanguage('en')}
-      >
-        {t('language.en')}
+    <Dropdown menu={{ items }} placement="bottomRight">
+      <Button className="language-button">
+        <Space>
+          <GlobalOutlined />
+          {i18n.language === 'en' ? 'EN' : 'ZH'}
+          <DownOutlined />
+        </Space>
       </Button>
-      <Button 
-        type={i18n.language === 'zh' ? 'primary' : 'default'} 
-        size="small" 
-        onClick={() => changeLanguage('zh')}
-      >
-        {t('language.zh')}
-      </Button>
-    </Space>
+    </Dropdown>
   );
 }

@@ -1,0 +1,131 @@
+.site-navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 0;
+  height: 72px; /* 固定適當高度以適應 logo */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.92);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 100%;
+}
+
+/* 新增 logo 容器並限制最大寬度 */
+.logo-container {
+  max-width: 240px; /* 限制 logo 容器的最大寬度 */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbar-logo-horizontal {
+  height: 150px; /* 設定為 150px */
+  width: auto;
+  max-width: 100%; /* 確保圖片不會超過容器寬度 */
+  object-fit: contain; /* 確保圖片完整顯示 */
+  transition: all 0.3s ease;
+  /* 保持視覺亮度 */
+  filter: drop-shadow(0 0 6px rgba(120, 180, 255, 0.4)) brightness(1.15);
+}
+
+.navbar-logo-horizontal:hover {
+  filter: drop-shadow(0 0 10px rgba(120, 180, 255, 0.6)) brightness(1.2);
+  transform: scale(1.02);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-button {
+  background-color: transparent;
+  border-color: #8a6e4b;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+  height: 36px;
+}
+
+.navbar-button:hover {
+  background-color: rgba(138, 110, 75, 0.2);
+  border-color: #8a6e4b;
+  color: #ffffff;
+}
+
+.ant-btn-primary.navbar-button {
+  background-color: #8a6e4b;
+  border-color: #8a6e4b;
+  color: #ffffff;
+}
+
+.ant-btn-primary.navbar-button:hover {
+  background-color: #97795a;
+  border-color: #97795a;
+}
+
+.language-switcher-container {
+  margin-left: 8px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .navbar-logo-horizontal {
+    height: 60px; /* 中等螢幕上稍微縮小 */
+  }
+  
+  .logo-container {
+    max-width: 200px; /* 縮小容器寬度 */
+  }
+  
+  .site-navbar {
+    height: 64px; /* 縮小導航欄高度 */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo-horizontal {
+    height: 48px; /* 小螢幕上更小 */
+  }
+  
+  .logo-container {
+    max-width: 160px; /* 更窄的容器 */
+  }
+  
+  .site-navbar {
+    height: 56px; /* 更小的導航欄高度 */
+  }
+  
+  .navbar-content {
+    padding: 0 12px; /* 減少內邊距 */
+  }
+  
+  .navbar-right {
+    gap: 8px; /* 減少間距 */
+  }
+}

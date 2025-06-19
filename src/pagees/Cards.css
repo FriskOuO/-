@@ -1,0 +1,175 @@
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  min-height: 100vh;
+}
+
+.cards-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cards-title {
+  font-family: 'Trajan Pro', 'Times New Roman', serif;
+  color: #f0f0f0;
+  text-shadow: 0 0 10px rgba(255, 200, 150, 0.4);
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.arcana-filter {
+  min-width: 150px;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+.card-search {
+  width: 250px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 30px;
+}
+
+.cards-result-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.results-count {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+
+.arcana-filter .ant-select-selector {
+  background: rgba(30, 30, 50, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(12px) !important;
+  border-radius: 20px !important;
+  height: 42px !important;
+  padding: 0 15px !important;
+}
+
+.arcana-filter .ant-select-selection-item {
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 40px !important;
+}
+
+.arcana-filter .ant-select-arrow {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 確保下拉選項樣式也符合整體風格 */
+.ant-select-dropdown {
+  background: rgba(35, 35, 55, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.ant-select-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.2s ease !important;
+}
+
+.ant-select-item:hover {
+  background: rgba(138, 110, 75, 0.25) !important;
+}
+
+.ant-select-item-option-selected {
+  background: rgba(138, 110, 75, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* 添加縮圖格式瀏覽樣式 */
+
+.cards-grid-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 10px 0 50px;
+}
+
+/* 響應式設計 */
+@media (max-width: 1200px) {
+  .cards-grid-thumbnails {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-grid-thumbnails {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid-thumbnails {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* 增加這些全局樣式，或者添加到您的 App.css */
+.ant-modal-root .ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-title {
+    font-size: 1.8rem;
+  }
+  
+  .filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-container .ant-space {
+    flex-direction: column;
+  }
+  
+  .arcana-filter,
+  .card-search {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+  }
+}

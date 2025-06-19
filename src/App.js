@@ -19,9 +19,9 @@ function App() {
   return (
     <TarotProvider>
       <Router>
-        <Layout style={{ minHeight: '100vh' }}>
+        <Layout className="app-layout">
           <Navbar />
-          <Content style={{ marginTop: '64px', padding: '0 16px' }}>
+          <Content className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/theme" element={<ThemeSelect />} />

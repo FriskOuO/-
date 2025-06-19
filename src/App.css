@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.app-layout {
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+.main-content {
+  padding-top: 64px; /* 與Navbar高度相等 */
+  min-height: calc(100vh - 64px);
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 64px;
+  }
+}

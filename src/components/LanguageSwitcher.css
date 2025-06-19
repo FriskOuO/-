@@ -1,0 +1,19 @@
+.language-button {
+  background: transparent;
+  border-color: #8a6e4b;
+  color: #f0f0f0;
+}
+
+.language-button:hover {
+  background-color: rgba(138, 110, 75, 0.2);
+  border-color: #8a6e4b;
+  color: #ffffff;
+}
+
+.ant-dropdown-menu-item {
+  transition: all 0.3s !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: rgba(138, 110, 75, 0.1) !important;
+}

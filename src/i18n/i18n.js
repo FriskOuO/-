@@ -1,10 +1,12 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-// 中文翻譯
+// 中文翻譯資源
 const zhResources = {
   translation: {
     'app.title': '神秘塔羅占卜',
+    'app.shortTitle': '神秘塔羅',
     'app.start': '開始占卜',
     'app.allCards': '所有牌義',
     'language.en': 'English',
@@ -28,14 +30,16 @@ const zhResources = {
     'result.backToHome': '返回首頁',
     'cardInfo.title': '塔羅牌牌義總覽',
     'cardInfo.upright': '正位牌義',
-    'cardInfo.reversed': '逆位牌義'
+    'cardInfo.reversed': '逆位牌義',
+    'cardInfo.searchPlaceholder': '搜尋牌名或關鍵字'
   }
 };
 
-// 英文翻譯
+// 英文翻譯資源
 const enResources = {
   translation: {
     'app.title': 'Mystic Tarot Reading',
+    'app.shortTitle': 'Mystic Tarot',
     'app.start': 'Start Reading',
     'app.allCards': 'All Cards',
     'language.en': 'English',
@@ -50,7 +54,7 @@ const enResources = {
     'count.threeCards': 'Three Card Spread',
     'count.sixCards': 'Six Card Spread',
     'draw.title': 'Select Your Cards',
-    'draw.instruction': 'Click on cards to select',
+    'draw.instruction': 'Click on cards to draw',
     'draw.complete': 'Complete Reading',
     'result.title': 'Your Reading Results',
     'result.theme': 'Reading Theme',
@@ -59,21 +63,27 @@ const enResources = {
     'result.backToHome': 'Back to Home',
     'cardInfo.title': 'Tarot Card Meanings',
     'cardInfo.upright': 'Upright Meaning',
-    'cardInfo.reversed': 'Reversed Meaning'
+    'cardInfo.reversed': 'Reversed Meaning',
+    'cardInfo.searchPlaceholder': 'Search card name or keywords'
   }
 };
 
 i18n
-  .use(initReactI18next)
+  .use(initReactI18next) // 將 i18n 實例傳遞給 react-i18next
+  .use(LanguageDetector)  // 使用瀏覽器語言檢測
   .init({
     resources: {
       en: enResources,
       zh: zhResources
     },
-    lng: localStorage.getItem('language') || 'zh', // 默認語言
-    fallbackLng: 'en',
+    fallbackLng: 'zh', // 如果當前語言沒有翻譯則使用這個語言
+    lng: localStorage.getItem('language') || navigator.language.split('-')[0] || 'zh', // 使用儲存的語言或瀏覽器語言
     interpolation: {
-      escapeValue: false // React 已經安全了，不需要 escape
+      escapeValue: false // React 已處理 XSS 攻擊
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage']
     }
   });
 

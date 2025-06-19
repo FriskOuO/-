@@ -1,0 +1,81 @@
+.card-thumbnail {
+  position: relative;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(200, 180, 140, 0.1);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  cursor: pointer;
+  background: rgba(25, 25, 35, 0.8);
+}
+
+.card-thumbnail:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(200, 180, 140, 0.2);
+}
+
+.thumbnail-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-thumbnail:hover .thumbnail-image {
+  transform: scale(1.08);
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 10px;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 20, 0.9) 0%,
+    rgba(10, 10, 20, 0.7) 60%,
+    rgba(10, 10, 20, 0) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.thumbnail-title {
+  margin: 0;
+  color: #f0f0f0;
+  font-family: 'Trajan Pro', 'Garamond', serif;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.card-thumbnail:hover .thumbnail-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 30, 0.95) 0%,
+    rgba(20, 20, 30, 0.8) 60%,
+    rgba(20, 20, 30, 0.1) 100%
+  );
+  padding-bottom: 20px;
+}
+
+.card-thumbnail:hover .thumbnail-title {
+  transform: translateY(-5px);
+  letter-spacing: 0.8px;
+}

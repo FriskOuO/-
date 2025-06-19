@@ -1,0 +1,125 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  padding-bottom: 40px; /* 向上偏移的效果 */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.home-content {
+  padding: 2.5rem 2rem;
+  border-radius: 1.2rem;
+  background-color: rgba(10, 10, 20, 0.75); /* 更深沉、神秘的背景色 */
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(60, 40, 70, 0.15); /* 優雅的陰影效果 */
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 380px; /* 控制在 320px~420px 之間的理想寬度 */
+  min-width: 320px;
+  margin: 0 auto;
+  transform: translateY(-5%); /* 整體上移效果 */
+}
+
+.home-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 2rem;
+  animation: subtle-glow 4s infinite alternate;
+}
+
+.home-title {
+  color: #f5f0e8 !important; /* 較溫和的白色 */
+  text-shadow: 0 0 8px rgba(255, 223, 186, 0.5) !important; /* 減弱陰影 */
+  margin-bottom: 2.5rem !important;
+  font-family: 'Trajan Pro', 'Garamond', 'Times New Roman', serif !important;
+  letter-spacing: 1px !important;
+  font-weight: 500 !important;
+  font-size: 2.2rem !important;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #8a6e4b 0%, #5e4a33 100%) !important;
+  border: none !important;
+  font-size: 1.2rem !important;
+  height: auto !important;
+  padding: 0.8rem 2.5rem !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 30px !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; /* 平滑的動畫曲線 */
+  position: relative;
+  overflow: hidden;
+}
+
+.start-button:hover {
+  transform: translateY(-3px) scale(1.05); /* 添加 scale 效果 */
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.35), 
+    0 0 20px rgba(255, 200, 120, 0.4) !important; /* 光暈感 */
+  background: linear-gradient(135deg, #97795a 0%, #6e5940 100%) !important;
+}
+
+.start-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 替換為更細膩、不那麼閃爍的光暈動畫 */
+@keyframes subtle-glow {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(255, 220, 175, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 12px rgba(255, 220, 175, 0.7));
+  }
+}
+
+/* 添加按鈕發光效果 */
+.start-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.start-button:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 1.9rem !important;
+  }
+  
+  .home-logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 2rem 1.5rem;
+    max-width: 340px;
+  }
+  
+  .home-title {
+    font-size: 1.7rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
